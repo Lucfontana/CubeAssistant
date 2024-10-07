@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <script src="scriptesp.js"></script>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="container">
+        <img src="../img/Cube assistant3.png" class="logo" alt="Logo">
+        <h1>Registro</h1> <br>
+        <h6>Ya tienes una cuenta? <a href="iniciosesion.html">Iniciar sesión</a></h6> <br>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            Nombre: <br><br><input type="text" name="username" id="user"> <br>
+            Contraseña: <br><br>  <input type="password" name="password" id="pw"><br> <br>
+            <input type="submit" value="Iniciar sesión" id="submitbutton"> <br>
+            <p id="tUser"></p>
+            <p id="tPass"></p>
+        </form>
+    </div>
+ 
+    
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+/*Código para la estructura del sitio web*/
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex {
+    flex: 1;
+    min-width: 400px;
+    
+}
+
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.in-flex div {
+    padding: 25px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+/*FIN del Código para la estructura del sitio web*/
+
+.title {
+    font-size: 80px;
+    background-color: aliceblue;
+    margin: 10px;
+    padding-left: 30px;
+    
+}
+
+div .centrar-img {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+
+}
+div .centrar-img img {
+    width: 25vw;
+    height: auto;
+}
+
+.contenido-ul a {
+    text-decoration: none;
+    color: black;
+}
+
+h6, p u {
+    text-decoration: none;
+    margin: 10px 0 0 45px;
+}
+
+/*Estilo para los índices*/
+
+.indice {
+    font-size: 40px;
+    font-style: italic;
+}
+.indice ol li {
+    padding: 10px 0 10px;
+}
+
+.ul-interior {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ul-interior li:nth-child(4) {
+    margin-bottom: 150px;
+}
+/*Estilo para los índices*/
+
+.imagen {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.margen {
+    margin-bottom: 120px;
+}
+
+nav p img:hover{
+    width: 140px;
+}
+
+.minicon {
+    width: 50px;
+    height: 50px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.minicon:hover {
+    width: 55px;
+    height: 55px;
+}
+
+.flex {
+    display: flex;
+}
+
+.outside {
+    background-color: aliceblue;
+    margin: 0 20px 0 20px;
+    padding: 20px;
+}
+.btn-display {
+    background-color: aliceblue;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.trabajando {
+    width: 50%;
+    height: 50%;
+}
+
+.avanzado_class {
+    padding-left: 20px;
+}
