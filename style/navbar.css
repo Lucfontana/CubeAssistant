@@ -122,7 +122,7 @@ nav p img {
     }
     .segunda-ul li {
         width: 190px;
-        transform: translateX(70px); /*Esto es para que los textos no se sobrepongan con el menu*/
+        transform: translateX(65px); /*Esto es para que los textos no se sobrepongan con el menu*/
         border-bottom: solid 1px #6DB2F1;
         text-align: center;
         background-color: #A7D5FF;
