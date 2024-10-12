@@ -15,6 +15,7 @@ nav {
     align-items: center;
     background-color: #9aacff;
     padding-left: 2vw;
+    z-index: 1;
 }
 
 .contenido-ul {
@@ -76,6 +77,55 @@ nav ul .desplegable:hover  .segunda-ul {
 nav p img {
     width: 120px;
     transition: width 1s;
+    position: relative;
+    z-index: 2;
+    
 }
 
 /*Fin del contenido para la barra de navegación*/
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburguesa span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .contenido-ul {
+        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute; /* Permite que el menú se superponga */
+        background-color: #9aacff;
+        width: 100%;
+        top: 60px; /* Ajusta la posición del menú debajo del nav */
+        left: 0;
+        z-index: 1; /* Establece un z-index menor para el menú */
+        }
+
+    .contenido-ul.active {
+        display: flex; /* Mostramos el menú cuando esté activo */
+    }
+
+    .menu-hamburguesa {
+        display: flex; /* Mostramos el menú de hamburguesa */
+    }
+
+    .desplegable {
+        z-index: 2;
+    }
+    .segunda-ul li {
+        width: 190px;
+        transform: translateX(70px); /*Esto es para que los textos no se sobrepongan con el menu*/
+        border-bottom: solid 1px #6DB2F1;
+        text-align: center;
+        background-color: #A7D5FF;
+        z-index: 3;
+    }
+}
