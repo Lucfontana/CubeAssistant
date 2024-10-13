@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth; /*Hace que las transiciones al momento de apretar algo en el indice para desplazarse se note*/
+}
+
 /*Código para la estructura del sitio web*/
 .home {
     display: flex;
