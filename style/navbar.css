@@ -59,7 +59,7 @@ nav ul .desplegable:hover .segunda-ul {
 /*Fin de la parte para que haya una transición al poner el mouse encima de uno de los links segunda ul*/
 
 .segunda-ul li {
-    width: 190px;
+    width: 150px;
     transform: translateX(-30px);
     border-bottom: solid 1px #6DB2F1;
     text-align: center;
@@ -121,7 +121,7 @@ nav p img {
         z-index: 2;
     }
     .segunda-ul li {
-        width: 190px;
+        width: 120px;
         transform: translateX(65px); /*Esto es para que los textos no se sobrepongan con el menu*/
         border-bottom: solid 1px #6DB2F1;
         text-align: center;

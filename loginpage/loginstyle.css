@@ -49,3 +49,9 @@ input, .input {
     color: red;
     font-size: 0.9em;
 }
+
+.submit {
+    border-style: none;
+    padding: 7px 15px 7px 15px;
+    border-radius: 15px;
+}

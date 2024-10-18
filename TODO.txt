@@ -1,0 +1,7 @@
+COSAS PARA HACER (TO DO)
+
+- Crear una nueva pagina principal
+- Hacer un login - sign up más cómodo
+- Añadir videos
+- Añadir contenido
+- Añadir paginas de apoyo (Practicar OLL y PLL)
