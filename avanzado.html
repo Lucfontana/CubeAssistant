@@ -10,14 +10,7 @@
     <title>Cube Assistant</title>
 </head>
 <body>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navList = document.getElementById('nav-list');
     
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
-    </script>
     <nav>
         <p><a href="index.html"><img src="img/Cube assistant3.png" alt="Cube Assistant Logo"></a></p>
         <div class="menu-hamburguesa" id="menu-toggle">
@@ -59,6 +52,14 @@
             </li>
         </ul>
     </nav>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-list');
+    
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
     <h6>TAMBIÉN TE PODRÍA INTERESAR: <a href="notacion.html">Notación</a>, <a href="wca.html">WCA</a></h6>
     <p class="title">Método Avanzado</p>
     <p><u>Método "CFOP"</u></p>
