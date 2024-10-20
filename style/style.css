@@ -141,3 +141,32 @@ nav p img:hover{
     width: 40px;
     height: 40px;
 }
+
+.main{
+    background-image: url(../img/wallpapermain.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7); /* Superposición de color negro con 50% de opacidad */
+    background-blend-mode: darken; /*Propiedad que permite mezclaR IMAGEN DE FONDO CON COLOR,
+                                     la propiedad darken mantiene el color mas oscuro de las dos incluidas*/
+}
+
+.mainavegation{
+    opacity: .7;
+}
+
+.intro {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.6); /* Superposición de color negro con 50% de opacidad */
+}
+
+.intro p{
+    color: white;
+    margin: 0 auto;
+}
