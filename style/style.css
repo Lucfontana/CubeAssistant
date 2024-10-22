@@ -154,7 +154,13 @@ nav p img:hover{
 }
 
 .mainavegation{
+    transition: all .8s;
     opacity: .7;
+}
+
+.mainavegation:hover{
+    transition: all .8s;
+    opacity: 1;
 }
 
 .intro {

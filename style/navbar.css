@@ -33,6 +33,7 @@ nav li {
 
 nav li:hover {
     background-color: #A7D5FF;
+    opacity: initial;
 }
 
 nav ul .desplegable {
@@ -43,7 +44,6 @@ nav ul .desplegable {
 
 /*Parte para que haya una transición al poner el mouse encima de uno de los links segunda ul*/
 .segunda-ul {
-    opacity: 0;
     position: absolute;
     margin-top: 1.5vw;
     transform: translateY(-10px); /* Añadimos un pequeño desplazamiento hacia arriba */
