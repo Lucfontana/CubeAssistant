@@ -18,6 +18,16 @@ nav {
     z-index: 1;
 }
 
+.mainavegation{
+    transition: all .8s;
+    opacity: .7;
+}
+
+.mainavegation:hover{
+    transition: all .8s;
+    opacity: 1;
+}
+
 .contenido-ul {
     display: flex;
     align-items: center;
@@ -33,7 +43,6 @@ nav li {
 
 nav li:hover {
     background-color: #A7D5FF;
-    opacity: initial;
 }
 
 nav ul .desplegable {

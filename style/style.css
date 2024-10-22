@@ -1,5 +1,7 @@
 *{
     scroll-behavior: smooth; /*Hace que las transiciones al momento de apretar algo en el indice para desplazarse se note*/
+    margin: 0;
+    padding: 0;
 }
 
 /*Código para la estructura del sitio web*/
@@ -10,7 +12,7 @@
 
 .in-flex {
     flex: 1;
-    min-width: 400px;
+    min-width: 430px;
     
 }
 
@@ -153,16 +155,6 @@ nav p img:hover{
                                      la propiedad darken mantiene el color mas oscuro de las dos incluidas*/
 }
 
-.mainavegation{
-    transition: all .8s;
-    opacity: .7;
-}
-
-.mainavegation:hover{
-    transition: all .8s;
-    opacity: 1;
-}
-
 .intro {
     text-align: center;
     align-items: center;
@@ -180,6 +172,8 @@ nav p img:hover{
 .espacioEnMedio{
     display: flex;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
 .espacioEnMedio a {
@@ -190,5 +184,20 @@ footer{
     display: flex;
     background-color: #9aacff;
     align-items: flex-end;
+    justify-content: center;
+}
+
+mark {
+    background-color: #9aacff;
+}
+
+.hijoCentrado{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.padrePadroso{
     justify-content: center;
 }
