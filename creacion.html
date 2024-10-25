@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/modal.css">
+    <script src="burgerAndNavbar.js"></script>
     <title>Cube Assistant</title>
 </head>
 <body>
@@ -47,22 +48,6 @@
         </div>
         
     </main>
-    <script>
-        // Cargar el contenido de la barra de navegación
-        fetch("navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-    
-                // Una vez que el HTML está cargado, agregar el evento del menú hamburguesa
-                const menuToggle = document.getElementById('menu-toggle');
-                const navList = document.getElementById('nav-list');
-    
-                menuToggle.addEventListener('click', () => {
-                    navList.classList.toggle('active');
-                });
-            });
-    </script>
     </div>
 </body>
 </html>
