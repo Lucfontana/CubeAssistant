@@ -50,13 +50,17 @@ nav ul .desplegable {
     margin: 0 30px 0 30px;
 }
 
+.desplegable {
+    transition: all .2s ease;
+}
+
 
 /*Parte para que haya una transición al poner el mouse encima de uno de los links segunda ul*/
 .segunda-ul {
     position: absolute;
     margin-top: 1.5vw;
     transform: translateY(-10px); /* Añadimos un pequeño desplazamiento hacia arriba */
-    transition: opacity 0.4s ease, transform 0.4s ease; /* Transición para opacidad y posición */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transición para opacidad y posición */
     visibility: hidden; /* Para evitar que interfiera cuando está oculto */
 }
 

@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the statement
     if ($stmt->execute()) {
-        echo "Registration successful!";
+        header("Location: login.html");
     } else {
         echo "Error: " . $stmt->error;
     }

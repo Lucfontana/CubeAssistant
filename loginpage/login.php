@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check if username and password are not empty
     if (empty($username) || empty($password)) {
-        header("Location: index.html?error=Please fill in all fields");
+        header("Location: login.html?error=Please fill in all fields");
         exit();
     }
 
@@ -40,14 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Start a session and set user details (successful login)
             session_start();
             $_SESSION['username'] = $user['username'];
-            header("Location: register.html"); // Redirect to a welcome or dashboard page
+            header("Location: ../mainpage.html"); // Redirect to a welcome or dashboard page
         } else {
             // Incorrect password
-            header("Location: index.html?error=Incorrect password");
+            alert("Contraseña incorrecta");
         }
     } else {
         // User not found
-        header("Location: index.html?error=User does not exist");
+        header("Location: login.html?error=User does not exist");
     }
 
     $stmt->close();
