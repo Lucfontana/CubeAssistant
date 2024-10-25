@@ -10,55 +10,13 @@
     <title>Cube Assistant</title>
 </head>
 <body>
-    
-    <nav>
-        <p><a href="mainpage.html"><img src="img/Cube assistant3.png" alt="Cube Assistant Logo"></a></p>
-        <div class="menu-hamburguesa" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="contenido-ul" id="nav-list">
-            <a href="index.html"><li>Nosotros</li></a>
-            <li class="desplegable">Aprendizaje
-                <ul class="segunda-ul">
-                    <a href="notacion.html"><li>Notación</li></a>
-                    <a href="principiante.html"><li>Principiantes</li></a>
-                    <a href="intermedio.html"><li>Intermedio</li></a>
-                    <a href="avanzado.html"><li>Avanzado</li></a>
-                </ul>
-            </li>
-            <li class="desplegable">Historia
-                <ul class="segunda-ul">
-                    <a href="creacion.html"><li>Creación</li></a>
-                    <a href="wca.html"><li>WCA</li></a>
-                </ul>
-            </li>    
-            <li class="desplegable">Idioma
-                <ul class="segunda-ul">
-                    <li>Español</li>
-                    <a href="working.html"><li>Inglés</li></a>
-                </ul>
-            </li>   
-            <li class="desplegable">
-                <!--Este svg fue extraido de la página de Bootstrap, el mismo es una imagen de un usuario para indicar login y sign up-->
-                <svg xmlns="http://www.w3.org/2000/svg" class="iniciosesion"width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                </svg>
-                <ul class="segunda-ul">
-                    <a href="http://localhost/login.html"><li>Log-in</li></a>
-                    <a href="http://localhost/register.html"><li>Sign-Up</li></a>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <div id="navbar"></div>
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navList = document.getElementById('nav-list');
-    
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
+        fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+    });
     </script>
     <h6>TAMBIÉN TE PODRÍA INTERESAR: <a href="notacion.html">Notación</a>, <a href="wca.html">WCA</a></h6>
     <p class="title">Método Avanzado</p>
@@ -82,7 +40,14 @@
             <br>
             
             <br>
-           
+            <script>
+                const menuToggle = document.getElementById('menu-toggle');
+                const navList = document.getElementById('nav-list');
+            
+                menuToggle.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                });
+            </script>
         </div>
     
         <div class="in-flex">
@@ -161,5 +126,29 @@
     <p class="outside imagen"><img src="img/placeholder.jpg" alt="placeholder"></p>
    
     </div>
+    <script>
+        // Paso 1: Cargar el contenido de la barra de navegación desde "navbar.html"
+        fetch("navbar.html")  // Realiza una petición para obtener el archivo `navbar.html`
+            .then(response => response.text()) // Cuando la respuesta llega, la convierte a texto plano
+            .then(data => {
+                // Inserta el contenido de `navbar.html` en el elemento con id "navbar"
+                document.getElementById("navbar").innerHTML = data;
+    
+                // Paso 2: Después de cargar el HTML, añadir el evento al menú hamburguesa
+                
+                // Selecciona el elemento con id "menu-toggle", que es el icono del menú hamburguesa
+                const menuToggle = document.getElementById('menu-toggle');
+                
+                // Selecciona el elemento con id "nav-list", que contiene los elementos de navegación
+                const navList = document.getElementById('nav-list');
+    
+                // Añade un evento de clic al icono del menú hamburguesa
+                menuToggle.addEventListener('click', () => {
+                    // Alterna la clase "active" en el menú de navegación
+                    // Esto permite que el menú hamburguesa se muestre u oculte al hacer clic
+                    navList.classList.toggle('active');
+                });
+            });
+    </script>
 </body>
 </html>
