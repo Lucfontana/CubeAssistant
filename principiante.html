@@ -59,29 +59,138 @@
                         Luego de esto, repetir los pasos hasta que las 4 aristas blancas estén en su lugar correcto.  
                     </p>
                 </li> 
-                    <p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p> <br>
+                    <p class="imagen"><img src="img/cruz.png" alt="placeholder" height="200px"></p> <br>
                 <li>
                     <h3 id="esquinas">Esquinas  <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3>
                         <br>
                     <p>La <strong>resolución de las esquinas</strong> en el FL también es intuitivo y se puede resolver sin algoritmos
                         , pero en caso de necesitar ayuda extra, existe un <em>buffer</em> (Movimiento repetido) para
-                         la correcta posición de las aristas. Para realizar el mismo, </p>    hay que 
-                    <p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p>
+                         la correcta posición de las aristas. Para realizar el mismo, hay que elegir una esquina cualquiera que tenga el 
+                         color blanco y ubicarla debajo de su posición correcta del lado derecho, una vez ubicada aquí, hay que repetir el movimiento
+                          <br><strong>R' D' R D</strong> hasta que la esquina esté posicionada correctamente. Recuerda este <em>buffer</em>, porque será de utilidad
+                          en un futuro.
+                    </p>     
+                    <p class="imagen"><img src="img/rdrd.png" height="300px" alt="acomodar Esquina"></p>
                 </li>
                 <li>
-                    <h3 id="aristas">Aristas   <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione culpa quae labore rerum, quibusdam quo cumque incidunt sed id ipsam veritatis facere modi dolorum in sapiente repellendus, perferendis iste molestiae!</p><p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p></li>
+                    <h3 id="aristas">Aristas   <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3>
+                    <br>
+                    <p>
+                        Después de completar la primera capa, trabaja en la segunda capa colocando las aristas en sus posiciones 
+                        correctas sin alterar la primera capa. Aquí necesitarás aplicar un par de movimientos básicos (algoritmos) 
+                        para insertar cada arista en su lugar. <br> <br>
+                        Para lograr esto, desde este momento tendrás que rotar tu cubo para que quede en la cara opuesta a la que estabas
+                        armando, es decir, si estas resolviendo la blanca, tendrás que rotar a la amarilla. Desde este punto, tendrás que
+                        encontrar aristas las cuales <strong>NO</strong> tengan el color de la cara opuesta (en este caso amarillo). Posteriormente, con la arista encontrada,
+                        el color que tienes en frente deberás alinearlo con su respectiva cara, por ejemplo, si te quedó el color <span id="blue">azul</span>,
+                        tendrás que alinearlo con la cara <span id="blue">azul</span>. <br> <br>
+                        En este momento, tienes dos posibles casos, en el que tengas que insertar dicha arista en la <strong>izquierda</strong> 
+                        o en la <strong>derecha</strong>. Para esto te tendrás que posicionar en frente de la cara azul y efectuar alguno de los siguientes dos casos:
+                        
+                        
+                    </p>
+                    <div class="espacioEnMedio">
+                        <figure><img src="img/f2l.png" alt="f2l" height="200px"><figcaption>U R U’ R’ U’ F’ U F</figcaption></figure>
+                        <figure><img src="img/f2l2.png" alt="f2l2" height="200px"><figcaption>U’ L’ U L U F U’ F’</figcaption></figure>
+                    </div>
+                </li>
             <h2 id="LL">2. Ultima capa <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h2>
             <br>
                 <ul>
-                    <li><h3 id="cruzOp">Cruz opuesta <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos blanditiis incidunt dicta perferendis reprehenderit doloribus ipsum ex explicabo beatae. Blanditiis sequi quis omnis eos nisi hic optio ducimus recusandae?</p></li><p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p><br>
-                    <li><h3 id="aristasOp">Aristas opuestas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati voluptate enim perspiciatis sed sint, velit illo earum, aspernatur ipsum quidem corporis a facilis, maxime similique quasi placeat numquam porro?</p></li><p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p><br>
-                    <li><h3 id="esquinasOp">Esquinas opuestas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde, eum, laborum perspiciatis iste quia asperiores perferendis, harum nisi iusto odit! Laboriosam consectetur sequi quae enim temporibus dolore iusto iure.</p></li><p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p><br>
-                    <li><h3 id="esquinasOrientar">Orientación de esquinas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem molestiae ipsam, ullam adipisci doloribus modi culpa facere dolorum vitae eaque sed harum suscipit. Exercitationem aliquam aliquid dolores nesciunt illum.</p></li><p class="imagen"><img src="img/placeholder.jpg" alt="placeholder"></p><br>
+                    <li>
+
+                        <h3 id="cruzOp">Cruz opuesta <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3><br>
+                        <p>
+                            Esta es de las partes más fáciles de la Última capa, consta en repetir un algoritmo <strong>(F R U R’ U’ F’)</strong>
+                            un máximo de 4 veces para resolver la cruz de la última capa. <br> <br>
+                            Para comenzar, con cada vez que se efectue este algoritmo, el cubo <em>"avanza una fase"</em>, primero comienza desde un 
+                            <strong>punto,</strong> después una <strong>V</strong>, después una <strong>barra</strong> y finalmente, la cruz resuelta
+                            completamente. <br> <br>
+                            <figure class="imagen"><img src="/img/Evolución.png" alt="Evolución" id="idCruzImagen"><figcaption>Distintas etapas o fases de la cruz</figcaption></figure>
+                            A continuación, se muestra cada una de las fases en su respectivo orden y con su respectiva notación para resolver dicho caso. <br> <br>
+                            Es importante mencionar que uno no e la fase del punto, uno puede comenzar directamente en cualquiera. Incluso 
+                            podés tener suerte y saltearte este paso. Pase lo que pase, la línea de las "fases" va a seguir teniendo <strong>el mismo orden</strong>.
+                        </p>
+                    </li>
+
+                    <div class="espacioEnMedio">
+                        <figure><img src="img/punto.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’ <br> —- U2 —- <br> F R U R’ U’ F’ (x2)</figcaption></figure>
+                        <figure class="imagen"><img src="img/v.png" alt="f2l2" height="200px"><figcaption>F R U R’ U’ F’ (x2)</figcaption></figure> 
+                    </div>
+
+                    <div class="espacioEnMedio">
+                        <figure><img src="img/barra.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’</figcaption></figure>
+                        <figure><img src="img/completado.png" alt="f2l2" height="200px"><figcaption>Estado completo</figcaption></figure> 
+                    </div>
+
+                    <li>
+                        <h3 id="aristasOp">Aristas opuestas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3>
+                        <br>
+                        <p>
+                            Para llegar a posicionar en su lugar correcto las aristas amarillas, primero que nada hay que observar el 
+                            caso que tocó, esto se hace moviendo la capa U hasta encontrar dos aristas que estén en su posición correcta. 
+                            Al lograr encontrarlas, hay dos posibles casos: <br> <br>
+                            <ul>
+                                <li>En el primero, te pueden tocar dos aristas juntas en su lugar correcto</li>
+                                <li>En el segundo, las aristas están en su lugar correcto pero separadas.</li>
+                            </ul> <br>
+                            Para el primero, hay que realizar el siguiente algoritmo <strong>una vez</strong> estando 
+                            posicionado con una arista mal posicionada en frente y otra mal posicionada a la derecha: <br><br>
+                            <strong><span id="blue">U R U R’ U R U U R’</span></strong> <br><br>
+                            En el otro caso, el algoritmo se realiza una vez y después se repite la búsqueda mencionada al principio.
+
+                            
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3 id="esquinasOp">Esquinas opuestas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3>
+                        <br>
+                        <p>
+                            Para acomodar las esquinas de la última capa, primero, sin realizar el movimiento de ninguna capa y solamente rotando el cubo,
+                            hay que encontrar una esquina que esté en su <strong>posición correcta</strong>,
+                            independientemente de si está bien o mal orientada, luego a esa misma esquina, hay que ubicarla en la izquierda y ejecutar el siguiente algoritmo:
+                            <br><br>
+                            <strong><span id="blue">U R U’ L’ U R’ U’ L</span></strong>
+                            <br><br>
+                            Es importante mencionar que este algoritmo se debe realizar <strong>una o dos veces</strong>. Después de 
+                            la primera, verificar si se acomodaron las esquinas, en caso de no poder, repetir este paso nuevamente.
+                            <br><br>
+                            En el caso de <strong>no</strong> haber encontrado <strong>ninguna esquina</strong> orientada correctamente,
+                            realiza el algoritmo en cualquier posición, luego busca una esquina que haya quedado bien orientada y luego 
+                            repite el paso anterior.
+                        </p>
+                    </li>
+
+                    <div class="espacioEnMedio">
+                        <figure><img src="img/orientarEsquinas.png" alt="orientar esquinas algoritmo 1" height="200px"><figcaption>U R U’ L’ U R’ U’ L</figcaption></figure>
+                        <figure><img src="img/orientarEsquinas2.png" alt="orientar esquinas algoritmo 2" height="200px"><figcaption>U R U’ L’ U R’ U’ L <br> (x2 o x3)</figcaption></figure> 
+                    </div>
+
+                    <li>
+                        <h3 id="esquinasOrientar">Orientación de esquinas <a href="#indice"><img src="img/flecharriba.png" alt="irIndice" width="8px"></a></h3>
+                        <br>
+                        <p>
+                            Para el paso final, ya deberías tener todas tus aristas orientadas correctamente y las esquinas en su posición 
+                            correcta pero orientadas incorrectamente. <br> <br>
+                            ¿Recordás el segundo paso de este tutorial? Ahora vuelve a ser necesario, ya que tendrás que efectuar el <em>buffer</em>
+                            mencionado en ese momento. Solamente que, tendrás que <mark>cumplir dos cosas</mark>: <br> <br>
+                                <ol>
+                                    <li>Debes intentar <strong>no ponerte nervioso</strong>, estás en el ultimo paso y al efectuar este algoritmo muchas veces
+                                        tu cubo puede parecer que se desarmó, pero cuando termines de orientar todas las esquinas, tu cubo estará resuelto.
+                                    </li> <br>
+                                    <li>Cuando orientes una esquina, mueve la capa superior antihorariamente (U') para tener la proxima esquina, si la esquina que te 
+                                        tocó ya está orientada, repite nuevamente para encontrarte con la siguiente.
+                                        Luego continúa efectuando hasta que dicha esquina quede orientada, y realiza nuevamente U'. Continúa repitiendo esto hasta
+                                        que tengas tus 4 esquinas posicionadas correctamente.
+                                    </li>
+                                </ol>
+                        </p>
+                    </li><p class="imagen"><img src="img/rdrd.png" height="300px" alt="placeholder"></p><br>
                 </ul>
             </ul>
             <br>
-            <h2></h2>
-            
+
             
         </div>
     

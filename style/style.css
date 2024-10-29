@@ -194,6 +194,27 @@ mark {
 .hijoCentrado{
     align-items: center;
     justify-content: center;
+    justify-items: center;
     margin: 0;
     padding: 0;
 }
+
+#blue{
+    color: #9aacff;
+}
+
+figcaption{
+    text-align: center;
+    color: #5e7af9;
+}
+
+@media (max-width: 800px){
+    .espacioEnMedio figure img {
+        height: 120px;
+        
+    }
+    #idCruzImagen {
+        height: 65px;
+    }
+}
+
