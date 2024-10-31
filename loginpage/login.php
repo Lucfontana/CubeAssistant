@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../mainpage.html"); // Redirect to a welcome or dashboard page
         } else {
             // Incorrect password
-            alert("Contraseña incorrecta");
+            header("Location: login.html?error=Incorrect password");
         }
     } else {
         // User not found
