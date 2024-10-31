@@ -83,7 +83,7 @@ nav ul .desplegable:hover .segunda-ul {
     background-color: #9aacff;
 }
 
-nav ul .desplegable:hover  .segunda-ul {
+nav ul .desplegable:hover .segunda-ul {
     display: block;
 }
 
@@ -102,7 +102,7 @@ nav p img {
     cursor: pointer;
 }
 
-.menu-hamburguesa span {
+.menu-hamburguesa span {    /*Estilo para las barritas del menu*/
     height: 3px;
     width: 25px;
     background-color: #333;
@@ -112,7 +112,7 @@ nav p img {
 
 @media (max-width: 600px) {
     .contenido-ul {
-        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+        display: none; /* Oculta el menú por defecto*/
         flex-direction: column;
         position: absolute; /* Permite que el menú se superponga */
         background-color: #9aacff;
