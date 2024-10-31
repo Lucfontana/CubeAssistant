@@ -110,7 +110,7 @@ nav p img {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1025px) {
     .contenido-ul {
         display: none; /* Oculta el menú por defecto*/
         flex-direction: column;

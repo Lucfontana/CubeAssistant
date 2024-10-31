@@ -222,6 +222,8 @@ figcaption{
     margin-left: 15px;
 }
 
+/*Código para la flechita que te lleva para arriba*/
+
 .llevaParaArriba {
     margin-left: 95%;
     justify-content: center;
@@ -262,3 +264,5 @@ figcaption{
     width: 40px;
 
 }
+
+/*Fin del ódigo para la flechita que te lleva para arriba*/
