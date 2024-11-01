@@ -1,12 +1,12 @@
 COSAS PARA HACER (TO DO)
 
 - Crear una nueva pagina principal (DONE)
+- Hacer nuevo boton para subir inicio página (DONE)
 - Hacer un login/sign up más cómodo (DONE)
+    Principiantes (DONE)
+    Intermedio
+    Avanzado (DONE)
+    WCA (DONE)
+- Añadir paginas de apoyo (Practicar OLL y PLL)
 - Añadir videos
 - Añadir contenido
-    Principiantes
-    Intermedio
-    Avanzado
-    WCA
-- Añadir paginas de apoyo (Practicar OLL y PLL)
-- Hacer nuevo boton para subir inicio página
