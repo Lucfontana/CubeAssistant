@@ -5,6 +5,9 @@
 }
 
 /*Código para la estructura del sitio web*/
+
+/*El flex wrap hace que los elementos de home se acomoden en filas/columnas
+  adicionales si el espacio horizontal disponible es insuficiente*/
 .home {
     display: flex;
     flex-wrap: wrap;

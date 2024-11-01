@@ -17,6 +17,6 @@
             menuToggle.addEventListener('click', () => {
                 // Alterna la clase "active" en el menú de navegación
                 // Esto permite que el menú hamburguesa se muestre u oculte al hacer clic
-                navList.classList.toggle('active');
+                navList.classList.toggle('active');     
             });
         });
