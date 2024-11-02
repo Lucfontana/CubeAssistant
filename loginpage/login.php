@@ -43,11 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../mainpage.html"); // Redirect to a welcome or dashboard page
         } else {
             // Incorrect password
-            header("Location: login.html?error=Incorrect password");
+            header("Location: error/error1.html");
         }
     } else {
         // User not found
-        header("Location: login.html?error=User does not exist");
+        header("Location: error/error2.html");
     }
 
     $stmt->close();
