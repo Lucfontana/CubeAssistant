@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/modal.css">
-    <script src="burgerAndNavbar.js"></script>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <script src="../scripts/burgerAndNavbar.js"></script>
     <title>Cube Assistant</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
     
     <a href="#navbar">
         <div class="llevaParaArriba">
-            <img src="img/flechaArriba.png" alt="Flecha arriba" class="flechita">
+            <img src="../img/flechaArriba.png" alt="Flecha arriba" class="flechita">
         </div>
     </a>
 
@@ -66,7 +66,7 @@
                         Luego de esto, repetir los pasos hasta que las 4 aristas blancas estén en su lugar correcto.  
                     </p>
                 </li> 
-                    <p class="imagen"><img src="img/cruz.png" alt="placeholder" height="200px"></p> <br>
+                    <p class="imagen"><img src="../img/cruz.png" alt="placeholder" height="200px"></p> <br>
                 <li>
                     <h3 id="esquinas">Esquinas</h3>
                         <br>
@@ -77,7 +77,7 @@
                           <br><strong>R' D' R D</strong> hasta que la esquina esté posicionada correctamente. Recuerda este <em>buffer</em>, porque será de utilidad
                           en un futuro.
                     </p>     
-                    <p class="imagen"><img src="img/rdrd.png" height="300px" alt="acomodar Esquina"></p>
+                    <p class="imagen"><img src="../img/rdrd.png" height="300px" alt="acomodar Esquina"></p>
                 </li>
                 <li>
                     <h3 id="aristas">Aristas</h3>
@@ -97,8 +97,8 @@
                         
                     </p>
                     <div class="espacioEnMedio">
-                        <figure><img src="img/f2l.png" alt="f2l" height="200px"><figcaption>U R U’ R’ U’ F’ U F</figcaption></figure>
-                        <figure><img src="img/f2l2.png" alt="f2l2" height="200px"><figcaption>U’ L’ U L U F U’ F’</figcaption></figure>
+                        <figure><img src="../img/f2l.png" alt="f2l" height="200px"><figcaption>U R U’ R’ U’ F’ U F</figcaption></figure>
+                        <figure><img src="../img/f2l2.png" alt="f2l2" height="200px"><figcaption>U’ L’ U L U F U’ F’</figcaption></figure>
                     </div>
                 </li>
             <h2 id="LL">2. Ultima capa</h2>
@@ -113,7 +113,7 @@
                             Para comenzar, con cada vez que se efectue este algoritmo, el cubo <em>"avanza una fase"</em>, primero comienza desde un 
                             <strong>punto,</strong> después una <strong>V</strong>, después una <strong>barra</strong> y finalmente, la cruz resuelta
                             completamente. <br> <br>
-                            <figure class="imagen"><img src="/img/Evolución.png" alt="Evolución" id="idCruzImagen"><figcaption>Distintas etapas o fases de la cruz</figcaption></figure>
+                            <figure class="imagen"><img src="../img/Evolución.png" alt="Evolución" id="idCruzImagen"><figcaption>Distintas etapas o fases de la cruz</figcaption></figure>
                             A continuación, se muestra cada una de las fases en su respectivo orden y con su respectiva notación para resolver dicho caso. <br> <br>
                             Es importante mencionar que uno no e la fase del punto, uno puede comenzar directamente en cualquiera. Incluso 
                             podés tener suerte y saltearte este paso. Pase lo que pase, la línea de las "fases" va a seguir teniendo <strong>el mismo orden</strong>.
@@ -121,13 +121,13 @@
                     </li>
 
                     <div class="espacioEnMedio">
-                        <figure><img src="img/punto.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’ <br> —- U2 —- <br> F R U R’ U’ F’ (x2)</figcaption></figure>
-                        <figure class="imagen"><img src="img/v.png" alt="f2l2" height="200px"><figcaption>F R U R’ U’ F’ (x2)</figcaption></figure> 
+                        <figure><img src="../img/punto.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’ <br> —- U2 —- <br> F R U R’ U’ F’ (x2)</figcaption></figure>
+                        <figure class="imagen"><img src="../img/v.png" alt="f2l2" height="200px"><figcaption>F R U R’ U’ F’ (x2)</figcaption></figure> 
                     </div>
 
                     <div class="espacioEnMedio">
-                        <figure><img src="img/barra.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’</figcaption></figure>
-                        <figure><img src="img/completado.png" alt="f2l2" height="200px"><figcaption>Estado completo</figcaption></figure> 
+                        <figure><img src="../img/barra.png" alt="f2l" height="200px"><figcaption>F R U R’ U’ F’</figcaption></figure>
+                        <figure><img src="../img/completado.png" alt="f2l2" height="200px"><figcaption>Estado completo</figcaption></figure> 
                     </div>
 
                     <li>
@@ -147,8 +147,8 @@
                             En el otro caso, el algoritmo se realiza una vez y después se repite la búsqueda mencionada al principio.
 
                             <div class="espacioEnMedio">
-                                <figure><img src="img/acomodarAristas1.jpg" alt="orientar esquinas algoritmo 1" height="200px"><figcaption>U R U’ L’ U R’ U’ L</figcaption></figure>
-                                <figure><img src="img/acomodarAristas2.jpg" alt="orientar esquinas algoritmo 2" height="200px"><figcaption>U R U’ L’ U R’ U’ L <br> (x2 o x3)</figcaption></figure> 
+                                <figure><img src="../img/acomodarAristas1.jpg" alt="orientar esquinas algoritmo 1" height="200px"><figcaption>U R U’ L’ U R’ U’ L</figcaption></figure>
+                                <figure><img src="../img/acomodarAristas2.jpg" alt="orientar esquinas algoritmo 2" height="200px"><figcaption>U R U’ L’ U R’ U’ L <br> (x2 o x3)</figcaption></figure> 
                             </div>
                         </p>
                     </li>
@@ -173,8 +173,8 @@
                     </li>
 
                     <div class="espacioEnMedio">
-                        <figure><img src="img/orientarEsquinas.png" alt="orientar esquinas algoritmo 1" height="200px"><figcaption>U R U’ L’ U R’ U’ L</figcaption></figure>
-                        <figure><img src="img/orientarEsquinas2.png" alt="orientar esquinas algoritmo 2" height="200px"><figcaption>U R U’ L’ U R’ U’ L <br> (x2 o x3)</figcaption></figure> 
+                        <figure><img src="../img/orientarEsquinas.png" alt="orientar esquinas algoritmo 1" height="200px"><figcaption>U R U’ L’ U R’ U’ L</figcaption></figure>
+                        <figure><img src="../img/orientarEsquinas2.png" alt="orientar esquinas algoritmo 2" height="200px"><figcaption>U R U’ L’ U R’ U’ L <br> (x2 o x3)</figcaption></figure> 
                     </div>
 
                     <li>
@@ -196,7 +196,7 @@
                                     </li>
                                 </ol>
                         </p>
-                    </li><p class="imagen"><img src="img/rdrd.png" height="300px" alt="placeholder"></p><br>
+                    </li><p class="imagen"><img src="../img/rdrd.png" height="300px" alt="placeholder"></p><br>
                 </ul>
             </ul>
             <br>
@@ -205,7 +205,7 @@
         </div>
     
         <div class="in-flex">
-            <div><p class="centrar-img"><img src="img/resumen-resolucion.jpg" alt="Cubo azul"></p></div>
+            <div><p class="centrar-img"><img src="../img/resumen-resolucion.jpg" alt="Cubo azul"></p></div>
             <div><p>El método Principiantes fue creado por David Singmaster, el era un aficionado a los puzzle mecánicos y se dedicaba a su estudio.</p></div>
             
         </div>

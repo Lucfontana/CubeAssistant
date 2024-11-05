@@ -1,24 +1,26 @@
 *{
-    scroll-behavior: smooth; /*Hace que las transiciones al momento de apretar algo en el indice para desplazarse se note*/
+    scroll-behavior: smooth; /* Adds a smooth transition effect when clicking on an index to scroll */
     margin: 0;
     padding: 0;
 }
 
-/*Código para la estructura del sitio web*/
+/* Code for website structure */
 
-/*El flex wrap hace que los elementos de home se acomoden en filas/columnas
-  adicionales si el espacio horizontal disponible es insuficiente*/
+/* Flex wrap allows home elements to arrange in additional rows/columns
+   if the available horizontal space is insufficient */
 .home {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Sets a minimum width and makes each .in-flex take up 
+   a fraction of the total available space within the home container */
 .in-flex {
     flex: 1;
     min-width: 410px;
     
 }
 
+/* Makes each inflex take up twice the space inside of home */
 .in-flex:first-child {
     flex: 2;
     padding: 25px;
@@ -32,7 +34,7 @@
     margin: 20px;
 }
 
-/*FIN del Código para la estructura del sitio web*/
+/* End of code for website structure */
 
 .title {
     font-size: 80px;
@@ -64,7 +66,7 @@ h6, p u {
     margin: 10px 0 0 45px;
 }
 
-/*Estilo para los índices*/
+/* Style for indices */
 
 .indice {
     font-size: 40px;
@@ -83,7 +85,7 @@ h6, p u {
 .ul-interior li:nth-child(4) {
     margin-bottom: 150px;
 }
-/*Estilo para los índices*/
+/*END of style for indices*/
 
 .imagen {
     text-align: center;
@@ -153,16 +155,16 @@ nav p img:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.7); /* Superposición de color negro con 50% de opacidad */
-    background-blend-mode: darken; /*Propiedad que permite mezclaR IMAGEN DE FONDO CON COLOR,
-                                     la propiedad darken mantiene el color mas oscuro de las dos incluidas*/
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity*/
+    background-blend-mode: darken; /*Property that allows to mix BACKGROUND IMAGE WITH COLOUR,
+                                     the darken property keeps the darker colour of the two included. */
 }
 
 .intro {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Superposición de color negro con 50% de opacidad */
+    background-color: rgba(0, 0, 0, 0.6); /*Black overlay with 50% opacity*/
     margin: 5% 20% 0 20%;
 }
 
@@ -225,7 +227,7 @@ figcaption{
     margin-left: 15px;
 }
 
-/*Código para la flechita que te lleva para arriba*/
+/*Code for the little arrow that takes you upwards*/
 
 .llevaParaArriba {
     margin-left: 95%;
@@ -268,4 +270,4 @@ figcaption{
 
 }
 
-/*Fin del ódigo para la flechita que te lleva para arriba*/
+/*End of the code for the little arrow that takes you upwards*/

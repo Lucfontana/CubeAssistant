@@ -9,4 +9,3 @@ COSAS PARA HACER (TO DO)
     WCA (DONE)
 - Añadir paginas de apoyo (Practicar OLL y PLL)
 - Añadir videos
-- Añadir contenido

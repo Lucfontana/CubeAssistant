@@ -1,13 +1,13 @@
-/*Boton Modal*/
+/*Modal button*/
 
-/*Padding y color de fondo para el div del boton*/
+/*Padding and background colour for the button div*/
 .boton-modal {
     padding: 20px;
     background-color: aliceblue;
 }
 
-/*Estilo para los labels, dandole colord e letra, de fondo,
-  borde y dandole transicion*/
+/*Styling for labels, giving them font colour and background,
+  border and giving transition*/
 .boton-modal label {
     padding: 10px 15px;
     background-color: #6DB2F1;
@@ -17,20 +17,20 @@
     transition: all 300ms ease;
 }
 
-/*Cambia el color del label cuando se le pone el mouse encima*/
+/*Changes the colour of the label when the mouse is hovered over it.*/
 .boton-modal label:hover{
     background-color: #A7D5FF;
 }
-/*Fin Boton Modal*/
+/*End of the modal button*/
 
 
-/*Ventana Modal*/
-/*Se oculta por defecto los botones para cerrar el modal*/
+/*Modal window*/
+/*By default, the buttons to close the modal are hidden.*/
 #btn-modal1, #btn-modal2 {
     display: none;
 }
 
-/*Ocupa todo el tamaño actual de la pantalla, está opaco y alineado al centro en X, Y*/
+/*Occupies the entire current screen size, is opaque and centre aligned in X, Y*/
 .container-modal {
     width: 100%;
     height: 100vh;
@@ -43,8 +43,8 @@
     z-index: 100;
 }
 
-/*se activa solo si los botones mocales están es estado checked, al estar así, buscan al primer
-  elemento hermano con las clases container-modal y caseX-modal*/
+/*is activated only if the mucal buttons are in checked state, when checked, they look for the first
+  sibling element with the container-modal and caseX-modal classes.*/
 #btn-modal1:checked ~ .container-modal.case1-modal,
 #btn-modal2:checked ~ .container-modal.case2-modal {
     display: flex;
@@ -60,6 +60,8 @@
 .content-modal h2 {
     margin-bottom: 15px;
 }
+
+/*Orange bars above the paragraphs*/
 .content-modal p {
     padding: 15px 0px;
     border-top: 1px solid wheat;
@@ -83,5 +85,5 @@
 .content-modal .btn-cerrar label:hover {
     background-color: #A7D5FF;
 }
-/*Fin Ventana Modal*/
+/*End of modal window*/
 
