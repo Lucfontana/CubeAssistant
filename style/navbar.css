@@ -33,6 +33,16 @@ nav {
     opacity: 1;
 }
 /**/
+.main{
+    background-image: url(../img/wallpapermain.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity*/
+    background-blend-mode: darken; /*Property that allows to mix BACKGROUND IMAGE WITH COLOUR,
+                                     the darken property keeps the darker colour of the two included. */
+}
 
 /*Establece una propiedad general para cada elemento del navbar*/
 .contenido-ul {
@@ -123,7 +133,6 @@ nav p img {
     width: 25px;
     background-color: #333;
     margin: 4px 0;
-    transition: all 0.3s ease;
 }
 
 @media (max-width: 1025px) {

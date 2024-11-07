@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 /* Sets a minimum width and makes each .in-flex take up 
-   a fraction of the total available space within the home container */
+   a fraction of the total available space inside of the home container */
 .in-flex {
     flex: 1;
     min-width: 410px;
@@ -149,17 +149,6 @@ nav p img:hover{
     height: 40px;
 }
 
-.main{
-    background-image: url(../img/wallpapermain.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity*/
-    background-blend-mode: darken; /*Property that allows to mix BACKGROUND IMAGE WITH COLOUR,
-                                     the darken property keeps the darker colour of the two included. */
-}
-
 .intro {
     text-align: center;
     align-items: center;
@@ -230,7 +219,6 @@ figcaption{
 /*Code for the little arrow that takes you upwards*/
 
 .llevaParaArriba {
-    margin-left: 95%;
     justify-content: center;
     align-items: center;
     z-index: 98;
